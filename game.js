@@ -648,18 +648,20 @@ AlienBullet = function () {
 };
 AlienBullet.prototype = new Bullet();
 
+
 Asteroid = function () {
+  
   this.init("asteroid",
-            [-10,   0,
-              -5,   7,
-              -3,   4,
-               1,  10,
-               5,   4,
-              10,   0,
-               5,  -6,
-               2, -10,
-              -4, -10,
-              -4,  -5]);
+            [Math.random()*0.3*-10,   Math.random()*0.3*0,
+              Math.random()*0.3*-5,   Math.random()*0.3*7,
+              Math.random()*0.3*-3,   Math.random()*0.3*4,
+               Math.random()*0.3*1,  Math.random()*0.3*10,
+               Math.random()*0.3*5,   Math.random()*0.3*4,
+              Math.random()*0.3*10,   Math.random()*0.3*0,
+               Math.random()*0.3*5,  Math.random()*0.3*-6,
+               Math.random()*0.3*2, Math.random()*0.3*-10,
+              Math.random()*0.3*-4, Math.random()*0.3*-10,
+              Math.random()*0.3*-4,  Math.random()*0.3*-5]);
 
   this.color = 'lightgray';
   this.solid = true;
